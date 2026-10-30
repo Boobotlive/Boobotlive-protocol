@@ -1,0 +1,45 @@
+/* Palette provenance: k-means (k=4, 25 iters) over every file in brand/ and reference/,
+   each centroid snapped to the nearest real pixel. Format: file@x,y. The gate re-reads
+   that pixel and fails if the hex differs. Hex literals live in this file only. */
+:root {
+  color-scheme: light;
+  --paper: #f5f2eb; /* LOGO BOOBOT PNG.png@0,0 */
+  --card: #f7f6f1; /* BOOBOT 1.jpg.jpeg@80,0 */
+  --paper-hi: #fdfcf8; /* BOOBOT 1.jpg.jpeg@1274,257 */
+  --stone: #d4d3ce; /* BOOBOT 1.jpg.jpeg@1423,306 */
+  --hairline: #dbdad5; /* BOOBOT 2.jpg.jpeg@141,30 */
+  --smoke: #6d6a65; /* BOOBOT 2.jpg.jpeg@1163,453 */
+  --graphite: #7d7976; /* LOGO BOOBOT JPG.jpg.jpeg@760,527 */
+  --ink: #181818; /* LOGO BOOBOT PNG.png@800,529 */
+  --night-1: #1f1e1c; /* BOOBOT 2.jpg.jpeg@1271,223 */
+  --night-2: #292824; /* BOOBOT 1.jpg.jpeg@1265,225 */
+  --night-line: #4f4e4c; /* SAMPUL BOOBOT JPG.jpg.jpeg@394,125 */
+  --night-muted: #9e9d99; /* SAMPUL BOOBOT JPG.jpg.jpeg@1275,66 */
+
+  --bg: var(--paper);
+  --surface: var(--paper-hi);
+  --surface-2: var(--card);
+  --text: var(--ink);
+  --muted: var(--smoke);
+  --line: var(--hairline);
+  --btn: var(--ink);
+  --btn-text: var(--paper);
+  --tile: var(--paper-hi);
+  --poster: var(--paper);
+  --ghost: var(--stone);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--ink);
+  --surface: var(--night-1);
+  --surface-2: var(--night-2);
+  --text: var(--paper);
+  --muted: var(--night-muted);
+  --line: var(--night-line);
+  --btn: var(--paper);
+  --btn-text: var(--ink);
+  --tile: var(--paper);
+  --poster: var(--paper);
+  --ghost: var(--stone);
+}

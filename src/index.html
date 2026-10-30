@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boobot | One assistant, every model</title>
+<meta name="description" content="Boobot is an assistant that keeps your context, lets you choose the model behind each answer, and tracks the Solana market live.">
+<meta property="og:title" content="Boobot | One assistant, every model">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://boobot.live/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/boobot-logo-640.png" as="image">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+document.documentElement.classList.add('js');
+try { var t = localStorage.getItem('boobot-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><i data-progress></i></div>
+
+<header class="site-header wrap">
+  <a class="wordmark" href="#top" aria-label="Boobot home">
+    <span class="wordmark-tile"><img src="assets/boobot-logo-192.png" width="30" height="30" alt=""></span>
+    <span>Boobot</span>
+  </a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#market">Market</a>
+    <a href="#workspace">Workspace</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#register">Register</a>
+    <a href="#roadmap">Roadmap</a>
+  </nav>
+  <div class="header-actions">
+    <!--@social-->
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch colour theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <details class="mobile-nav" data-menu>
+      <summary class="icon-btn burger" aria-label="Open navigation"><span></span><span></span></summary>
+      <nav class="mobile-panel" aria-label="Mobile navigation">
+        <a href="#market">Market</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#register">Register</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap" id="top"><!--@ca--></div>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Boobot.live / Built on Solana</p>
+        <h1 id="hero-title">
+          <span class="ph"><i class="w" style="--i:0">One</i> <i class="w" style="--i:1">assistant.</i></span>
+          <span class="ph"><i class="w" style="--i:2">One</i> <i class="w" style="--i:3">memory.</i></span>
+          <span class="ph"><i class="w" style="--i:4">Every</i> <i class="w" style="--i:5">model.</i></span>
+        </h1>
+        <p class="hero-sum">Boobot holds on to what you share, recalls it when it counts, and lets you choose the engine behind each reply.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#market">Watch the market <span aria-hidden="true">&darr;</span></a>
+          <a class="text-link" href="#workspace">Take the tour <span aria-hidden="true">&nbsp;&rarr;</span></a>
+        </div>
+        <p class="hero-note">Runs on Solana &middot; Works with the models you pick</p>
+      </div>
+      <div class="stage" data-stage aria-hidden="false">
+        <div class="layer layer-mesh" data-depth="6" aria-hidden="true"><i></i><i></i></div>
+        <div class="layer layer-ghost" data-depth="14" aria-hidden="true"><div class="ghost"></div></div>
+        <div class="layer layer-logo" data-depth="28"><img src="assets/boobot-logo-640.png" width="640" height="640" alt="Boobot logo" fetchpriority="high"></div>
+        <span class="chip-float chip-a" aria-hidden="true">Memory on</span>
+        <span class="chip-float chip-b" aria-hidden="true">Solana</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Live Solana ticker" data-ticker>
+    <div class="ticker-track" data-ticker-track>
+      <div class="ticker-set" data-ticker-set>
+        <span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span>
+      </div>
+      <div class="ticker-set" data-ticker-set aria-hidden="true">
+        <span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span><span class="sk sk-tick"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section wrap" id="market" aria-labelledby="market-title" data-market <!--@market-cfg-->>
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">01 / Live market</p>
+        <h2 id="market-title">What Solana is trading right now.</h2>
+      </div>
+      <p>Straight from public pools. No wallet, no sign-in, and nothing here depends on a launch.</p>
+    </div>
+    <div class="toolbar" data-reveal>
+      <div class="tabs" role="tablist" aria-label="Market view" data-tabs="market">
+        <span class="tab-thumb" aria-hidden="true"></span>
+        <button class="tab" role="tab" aria-selected="true" data-sort="volume" type="button">By volume</button>
+        <button class="tab" role="tab" aria-selected="false" data-sort="swing" type="button">By swing</button>
+      </div>
+      <span class="pill" data-status="connecting" data-pill role="status"><span class="dot" aria-hidden="true"></span><span data-pill-text>Connecting</span></span>
+    </div>
+    <div class="tiles" data-reveal-group>
+      <article class="tile spot" data-reveal><h3>Tokens tracked</h3><div class="val" data-tile="count"><span class="sk l"></span></div><p class="cap">In this view</p></article>
+      <article class="tile spot" data-reveal><h3>Combined volume</h3><div class="val" data-tile="volume"><span class="sk l"></span></div><p class="cap">Past day</p></article>
+      <article class="tile spot" data-reveal><h3>Combined liquidity</h3><div class="val" data-tile="liquidity"><span class="sk l"></span></div><p class="cap">Across tracked pools</p></article>
+      <article class="tile spot" data-reveal><h3>Biggest swing</h3><div class="val" data-tile="swing"><span class="sk l"></span></div><p class="cap">Largest move, past day</p></article>
+    </div>
+    <div class="market" data-reveal role="table" aria-label="Top Solana tokens">
+      <div class="mrow head" role="row">
+        <span role="columnheader"><span class="sr-only">Logo</span></span>
+        <span role="columnheader">Token</span>
+        <span class="r" role="columnheader">Price</span>
+        <span class="r" role="columnheader">Move</span>
+        <span class="r" role="columnheader">Volume</span>
+        <span class="r" role="columnheader">Liquidity</span>
+        <span role="columnheader"><span class="sr-only">Copy address</span></span>
+      </div>
+      <div data-rows></div>
+      <div class="market-error" data-error hidden><span class="pill"><span class="dot" aria-hidden="true"></span>Feed unreachable</span><span>The source did not answer. Values show a dash until it does.</span></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="workspace" aria-labelledby="ws-title">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">02 / The workspace</p>
+        <h2 id="ws-title">Ask once.<br>Pick it up anywhere.</h2>
+      </div>
+      <p>One window for the conversation, the context behind it, and the engine that answers.</p>
+    </div>
+    <div class="window spot" data-reveal data-window>
+      <div class="titlebar"><div class="lights" aria-hidden="true"><i></i><i></i><i></i></div><span class="ttl">boobot</span></div>
+      <div class="win-body">
+        <div class="win-side" role="tablist" aria-label="Workspace views" data-tabs="window">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="pane-chat" type="button">Chat</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="pane-memory" type="button">Memory</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="pane-models" type="button">Models</button>
+        </div>
+        <div>
+          <div class="win-pane" id="pane-chat" role="tabpanel">
+            <div class="bubble me">Where did we land on the checklist?</div>
+            <div class="bubble">Most items are closed. Two still need your sign-off. Want them listed with the reasons?</div>
+            <div class="bubble me">Yes, and draft the reply to the team.</div>
+          </div>
+          <div class="win-pane" id="pane-memory" role="tabpanel" hidden>
+            <div class="note-row"><span>Preferred tone</span><span>Short and direct</span></div>
+            <div class="note-row"><span>Active project</span><span>Checklist</span></div>
+            <div class="note-row"><span>Pending asks</span><span>Awaiting sign-off</span></div>
+          </div>
+          <div class="win-pane" id="pane-models" role="tabpanel" hidden>
+            <div class="note-row"><span>Quick drafts</span><span>Light model</span></div>
+            <div class="note-row"><span>Hard reasoning</span><span>Frontier model</span></div>
+            <div class="note-row"><span>Private notes</span><span>On your machine</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="capabilities" aria-labelledby="cap-title">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">03 / Capabilities</p>
+        <h2 id="cap-title">Three habits.<br>One steady helper.</h2>
+      </div>
+      <p>Each piece does one job well, then hands off to the next.</p>
+    </div>
+    <div class="cards" data-reveal-group>
+      <article class="card spot" data-reveal><span class="idx">01 / Assistant</span><h3>A helper with a brief.</h3><p>Hand it a role, a tone and a set of limits. It sticks to them until you say otherwise.</p></article>
+      <article class="card spot" data-reveal><span class="idx">02 / Memory</span><h3>Context you control.</h3><p>It keeps what is useful, shows you what it kept, and lets you trim anything that should go.</p></article>
+      <article class="card spot" data-reveal><span class="idx">03 / Models</span><h3>Swap the engine.</h3><p>Pick another engine for another task without losing the thread you already built.</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="register" aria-labelledby="reg-title">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">04 / Project register</p>
+        <h2 id="reg-title">Only what is<br>confirmed goes live.</h2>
+      </div>
+      <p>A fact appears here once someone states it. Until then its slot stays off and says so plainly.</p>
+    </div>
+    <div class="reg-grid" data-reveal-group>
+      <!--@register-->
+    </div>
+    <div class="share-grid" data-reveal-group>
+      <article class="share spot" data-reveal><strong aria-hidden="true">&mdash;</strong><h3>Liquidity</h3><p>Pending</p></article>
+      <article class="share spot" data-reveal><strong aria-hidden="true">&mdash;</strong><h3>Community</h3><p>Pending</p></article>
+      <article class="share spot" data-reveal><strong aria-hidden="true">&mdash;</strong><h3>Operations</h3><p>Pending</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="flow" aria-labelledby="flow-title">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">05 / How it runs</p>
+        <h2 id="flow-title">From a request<br>to a result.</h2>
+      </div>
+    </div>
+    <ol class="flow" data-reveal-group>
+      <li data-reveal><span class="no">01 / Connect</span><h3>Plug in<br>your engines.</h3><p>Add the models you already use and set which one answers what.</p></li>
+      <li data-reveal><span class="no">02 / Remember</span><h3>Let it<br>take notes.</h3><p>Useful facts are saved as you go, and every note can be opened and edited.</p></li>
+      <li data-reveal><span class="no">03 / Delegate</span><h3>Give it<br>a task.</h3><p>Describe the outcome. Boobot picks the engine and brings the context along.</p></li>
+      <li data-reveal><span class="no">04 / Refine</span><h3>Correct it,<br>keep going.</h3><p>Feedback is stored, so the next answer starts closer to what you wanted.</p></li>
+    </ol>
+  </section>
+
+  <section class="section wrap" id="roadmap" aria-labelledby="road-title">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">06 / Roadmap</p>
+        <h2 id="road-title">Where it goes next.</h2>
+      </div>
+      <p>Four stages, in order. Each opens only after the one before it holds up.</p>
+    </div>
+    <div class="road" data-reveal-group>
+      <article class="phase spot" data-reveal><span class="tag">Stage one</span><h3>Foundation</h3><p>Brand, site and a live market view that works without any launch.</p></article>
+      <article class="phase spot" data-reveal><span class="tag">Stage two</span><h3>Workspace</h3><p>The chat window, with built-in recall and a model picker.</p></article>
+      <article class="phase spot" data-reveal><span class="tag">Stage three</span><h3>Community</h3><p>Shared bots and a place for builders to compare notes.</p></article>
+      <article class="phase spot" data-reveal><span class="tag">Stage four</span><h3>Ecosystem</h3><p>Open tooling so others can extend what Boobot can do.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <p>Boobot is an independent project. Prices and volumes come from a public source and are shown as received. Nothing on this page is financial advice.</p>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="#market">Market</a><a href="#register">Register</a><a href="#roadmap">Roadmap</a><a href="#top">Back to top</a>
+  </nav>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

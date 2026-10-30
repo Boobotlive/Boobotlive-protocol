@@ -1,0 +1,17 @@
+{
+  "name": "boobot",
+  "version": "1.0.0",
+  "description": "Boobot site: one assistant, one memory, every model.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "node-html-parser": "^9.0.5",
+    "sharp": "^0.34.0"
+  }
+}
